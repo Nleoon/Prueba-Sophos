@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUNIT
+    testImplementation 'junit:junit:4.12'
+    // SERENITY
+    implementation 'net.serenity-bdd:serenity-core:2.0.82'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.0.82'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:2.0.82'
+
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'com.github.stephenc.monte:monte-screen-recorder:0.7.7.0'
+}
